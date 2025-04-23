@@ -1,0 +1,50 @@
+
+{
+   dbmail_config/1
+   Memcheck:Leak
+   ...
+   fun:config_read
+   ...
+}
+{
+   dbmail_config/2
+   Memcheck:Leak
+   ...
+   fun:g_key_file_free
+   ...
+}
+{
+   g_mime_init
+   Memcheck:Leak
+   ...
+   fun:g_mime_init
+   ...
+}
+
+{
+   nss
+   Memcheck:Leak
+   fun:malloc
+   fun:nss_parse_service_list
+   ...
+}
+
+{
+   zdb
+   Memcheck:Leak
+   fun:calloc
+   fun:_dl_allocate_tls
+   fun:pthread_create@@GLIBC*
+   fun:ConnectionPool_start
+   ...
+}
+
+{
+   check
+   Memcheck:Leak
+   ...
+   fun:emalloc
+   ...
+}
+
+

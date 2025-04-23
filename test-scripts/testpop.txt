@@ -1,0 +1,11 @@
+CAPA
+AUTH
+USER testuser1
+PASS test
+STAT
+LIST
+UIDL
+RETR 1
+DELE 1
+QUIT
+

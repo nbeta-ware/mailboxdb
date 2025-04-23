@@ -1,0 +1,12 @@
+[Unit]
+Description=DBMail pop3 Server
+After=network.target network-online.target mysqld.service postgresql.service
+
+[Service]
+Type=notify
+ExecStart=@sbindir@/dbmail-pop3d -D
+Restart=always
+RestartSec=3s
+
+[Install]
+WantedBy=multi-user.target

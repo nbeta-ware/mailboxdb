@@ -1,25 +1,34 @@
-# MailBoxDB
-> Copyright (c) 2025 Cosmin Cioranu, cosmin@nbeta.ro
-> see README.dbmail.md
+# DBMail
+> Copyright (c) 2023-2024 Cosmin Cioranu, support@nbeta.ro
+> 
+> Copyright (c) 2020-2024 Alan Hicks, Persistent Objects Ltd support@p-o.co.uk
+>
+> Copyright (c) 2014-2019 Paul J Stevens, The Netherlands, support@nfg.nl
+>
+> Copyright (c) 2004-2013 NFG Net Facilities Group BV support@nfg.nl
+>
+> Copyright (c) 2000-2006 IC&S, The Netherlands
 
 ## What is it?
 
-MailBoxDB is a collection of programs that enables email to be managed, stored in
-MailBoxDB is drop in replacement of DBMail
+DBMail is a collection of programs that enables email to be managed, stored in
+and retrieved from a database.
+
+**Note:** This repository contains some features that are not present in the official DBMail
 
 ## Why is it useful?
 
 - Securely and scaleably manages user emails with industry standard IMAP;
 
 - Integrates with existing authentication backends including ActiveDirectory
-and OpenLDAP;
+  and OpenLDAP;
 
-- MailBoxDB is scalable including multiple terrabyte installations;
+- DBMail is scalable including multiple terrabyte installations;
 
-- MailBoxDB is flexible. You can run dbmail programs on different servers talking
+- DBMail is flexible. You can run dbmail programs on different servers talking
   to the same database;
 
-- Email filtering is integrated into MailBoxDB and managed using SIEVE;
+- Email filtering is integrated into DBMail and managed using SIEVE;
 
 - Schema upgrades are automatic with SQL provided for DBAs who wish to upgrade
   manually;
@@ -34,28 +43,28 @@ and OpenLDAP;
 
 - Secure connections thanks to TLS;
 
-- MailBoxDB is database driven so no need of systemusers;
+- DBMail is database driven so no need of systemusers;
 
 - No need to maintain system users or write access to the filesystem;
 
-- MailBoxDB is Free with a recognised GPL2 Open Source licence.
+- DBMail is Free with a recognised GPL2 Open Source licence.
 
 ## Who created it?
 
-MailBoxDB is based on DBMail which was originally created by IC&S in the Netherlands.
+DBMail was originally created by IC&S in the Netherlands.
 
-MailBoxDB was created by Cosmin Cioranu buiding on top of the original DBMail. 
+Around 2003, Paul Stevens at NFG also joined the development team, initially to
+provide debian packaging, later to take over development of the 2.1 release.
+Aaron Stone also deserves special thanks for initiating the LDAP driver,
+maintaining the delivery chain and of course sieve support.
 
-Around 2025, Cosmin Cioranu has taken the decision to create a deep fork of DBMail in 
-order to add new features that were not possible to be integrated to DBMail due to directional
-disagreements with DBMail team. 
-
-Also as DBMail, MailBoxDB is now a community effort to create a fast, effecient and scalable
-database driven mailingsystem, Therefore MailBoxDB has the GPL licence.
+DBMail is now a community effort to create a fast, effecient and scalable
+database driven mailingsystem. Both IC&S and NFG are fully behind opensource
+and the GPL. Therefore DBMail has the GPL licence.
 
 ## Support
 
-Support is available by raising an issue at https://github.com/nbeta-ware/mailboxdb
+Support is available by raising an issue at https://github.com/dbmail/dbmail
 
 ### Architecture
 
@@ -64,17 +73,17 @@ https://dbmail.org/architecture/
 
 ## Future
 
-Check the https://github.com/nbeta-ware/mailboxdb for further MailBoxDB plans.
+Check the website for further DBMail plans.
 
-## What kind of licence is MailBoxDB?
+## What kind of licence is DBMail?
 
-MailBoxDB uses the GPL version 2 licence. 
+DBMail uses the GPL version 2 licence. 
 
 It's included in the COPYING file.
 
 ## How do I install it?
 
-MailBoxDB is available on many Linux and BSD distributions.
+DBMail is available on many Linux and BSD distributions.
 
 There is also an experimental
 [Docker image](https://hub.docker.com/r/alanhicks/dbmail)
@@ -98,7 +107,7 @@ https://github.com/dbmail/dbmail/blob/main/contrib/exim-dbmail-configure
 
 ### Integration
 
-MailBoxDB integrates with most MTAs. There are a number of examples on
+DBMail integrates with most MTAs. There are a number of examples on
 https://dbmail.org/docs/
 
 Web frontends including [SquirrelMail](https://squirrelmail.org/) and
@@ -120,7 +129,7 @@ via dbmail-sieved.
 
 ### Installing
 
-* Download MailBoxDB package
+* Download DBMail package
 * Install dependencies (some provided from your linux / BSD distribution and
   some (libzdb and/or libsieve) need to be compiled
 * ./configure
